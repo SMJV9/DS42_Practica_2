@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Julio Cesar Vasquez Alvarez"
+        app:layout_constraintBottom_toTopOf="@id/matri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        />
+
+    <TextView
+        android:id="@+id/matri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22311022"
+        app:layout_constraintTop_toBottomOf="@id/nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:importantForAccessibility="no"
+        />
+
+    <EditText
+        android:id="@+id/grupo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType=""
+        android:hint="grupo:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/matri"
+
+        />
+
+    <EditText
+        android:id="@+id/carre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Carrera:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/grupo"
+        app:layout_constraintTop_toBottomOf="@id/matri"
+        />
+
+    <EditText
+        android:id="@+id/nomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Nombre:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/grupo"
+        />
+
+    <Button
+        android:id="@+id/rem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumen"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nomb"
+        />
+
+    <Button
+        android:id="@+id/prom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promedio"
+        app:layout_constraintStart_toEndOf="@id/rem"
+        app:layout_constraintTop_toBottomOf="@id/nomb"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
